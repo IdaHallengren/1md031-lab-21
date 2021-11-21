@@ -1,118 +1,17 @@
-<!DOCTYPE HTML>
-<html lang="en">
-<head >
-    <title>BurgerHeaven</title>  <!-- Your comment goes here -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8"/>
-</head>
-<body>
-        <header>
-            <div id="header">
-            <img src="https://thatsup.se/content/img/article/11/apr/uppsalas-b%C3%A4sta-barer.jpg" id="headerimage">
-                <h1 id="welcome">Welcome to BurgerHeaven</h1>
-            </div>
-        </header>
-
-        <main>
-            <section id="backgroundburger">
-                <div class="wrapper">
-                    <div class="burgerheadline">
-                    <nav> <h2> Select a burger </h2></nav>
-                    This is where you execute burger selection
-                    <br/>
-                    </div>
-
-                <div class="burger1">
-                    <h3> The Bruno burger</h3>
-                    <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixid=MnwxMjA3fDB8MHxzZWF
-                    yY2h8Nnx8YnVyZ2VyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" height="200px" >
-
-                    <ul>
-                        <li> Contains <span class="allergies" > Lactose </span></li>
-                        <li> Contains <span class="allergies" > Gluten </span></li>
-                        <li> Contains <span class="allergies" > Nuts </span></li>
-                    </ul>
-                </div>
-
-                <div class="burger2" >
-                    <h3> Momo meadow </h3>
-                    <img src="https://media.dagensps.se/app/uploads/2020/05/12153609/hamburgare.jpg" height="200px" >
-                    <ul>
-                        <li> Contains <span class="allergies" > Pickles </span></li>
-                        <li> Contians <span class="allergies" > Sorrel mayonnaise </span></li>
-                    </ul>
-                </div>
-
-
-                <div class="burger3">
-                    <h3> The beyond burger </h3>
-                    <img   src="https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/5:4/w_3129,h_2503,c_limit/Smashburger-recipe-120219.jpg" height="200px"  >
-                    <ul>
-                        <li> Contains <span class="allergies" > Vegan patty </span></li>
-                        <li>Contains <span class="allergies" > Gluten </span> </li>
-                    </ul>
-                </div>
-                </div>
-
-            </section>
-
-            <section style="clear:left"  id="backgroundform">
-            <h2> Customer information </h2>
-                This is where you provide necessary information
-
-                <h3> Delivery information </h3>
-                <form>
-                <p>
-                    <label for="fullname"> Full name </label><br>
-                    <input type="text" id="fullname" name="fn" required="required" placeholder="First - and Last name">
-                </p>
-                <p>
-                    <label for="emailadress"> E-mail </label><br>
-                    <input type="email" id="emailadress" name="em" required="required" placeholder="E-mail address ">
-                </p>
-                <p>
-                    <label for="streetname"> Street </label><br>
-                    <input type="text" id="streetname" name="st" required="required" placeholder="Street name">
-                </p>
-                <p>
-                    <label for="house"> House </label><br>
-                    <input type="number" id="house" name="house" required="required" placeholder="House number">
-                </p>
-
-
-                <p>
-                    <label> Payment method </label>
-                    <select id="payment" name="pay" >
-                            <option > Swish </option>
-                            <option> Creditcard </option>
-                            <option selected="selected"> Klarna </option>
-                            <option> Banktranfer </option>
-                    </select>
-
-                </p>
-
-                <p>
-                    <legend> Gender </legend>
-                    <input type="radio" id="male" name="gender" value="Male">
-                    <label for="male"> Male </label><br>
-                    <input type="radio" id="female" name="gender" value="Female">
-                    <label for="female"> Female </label><br>
-                    <input checked="checked" type="radio" id="nogender" name="gender" value="Do not wish to provide">
-                    <label for="nogender"> Do not wish to provide  </label><br>
-                </p>
-                </form>
-
-            </section>
-            <button type="submit">
-                <img src="https://media.istockphoto.com/vectors/checkmark-icon-check-mark-vector-isolated-illustration-vector-id1205148147?k=20&m=120514
-                8147&s=612x612&w=0&h=6WoITHTxFwIBVnfODxsh7wAzU3-AZFkg0YZ5U_8COqw=" width="50px">
-                Send info
-            </button>
-        </main>
-        <br/>
-        <footer>
-            <hr> &copy; Thank you for ordering with us!
-        </footer>
-
-</body>
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
 </html>
